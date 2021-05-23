@@ -1,0 +1,22 @@
+﻿<Window x:Class="Ejercicio1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio1"
+        mc:Ignorable="d"
+        Title="Consultas Pediátricas" Height="450" Width="800">
+    <Grid Background="#FFBDBDBD">
+        <Button x:Name="btnSalir" Content="Salir" HorizontalAlignment="Left" Margin="656,365,0,0" VerticalAlignment="Top" Width="99" Height="35" FontSize="16" Background="#FFEE9797" Click="btnSalir_Click"/>
+        <Label Content="Consultas Pediátricas" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="774" FontSize="24" HorizontalContentAlignment="Center"/>
+        <Menu HorizontalAlignment="Left" Height="40" Margin="10,80,0,0" VerticalAlignment="Top" Width="774">
+            <MenuItem x:Name="mmiAtencion" Header="Registro" Height="40" Width="100" FontSize="13" Click="mmiAtencion_Click"/>
+            <MenuItem x:Name="mmiConsultas" Header="Consultas" Height="40" Width="100" FontSize="14">
+                <MenuItem x:Name="mmiConsultarNombres" Header="Nombre Pacientes" Height="40" Click="mmiConsultarNombres_Click"/>
+                <MenuItem x:Name="mmiConsultarMenores" Header="Pacientes Menores a 12 meses" Height="40" Click="mmiConsultarMenores_Click"/>
+                <MenuItem x:Name="mmiConsultarPromedio" Header="Promedio de Meses" HorizontalAlignment="Left" Height="45" Width="275" Click="mmiConsultarPromedio_Click"/>
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</Window>

@@ -1,0 +1,2 @@
+santiago,2400
+arica,500
